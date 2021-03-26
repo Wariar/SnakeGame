@@ -1,4 +1,3 @@
-using Core.Manager;
 using SnakeGame.GameSave;
 using UnityEngine;
 using SnakeGame.GameInput;
@@ -7,6 +6,7 @@ using System;
 using SnakeView;
 using SnakeGame.Config;
 using SnakeGame.Core;
+using SnakeGame.Core.Manager;
 
 namespace SnakeGame.Application.Manager
 {
@@ -37,6 +37,8 @@ namespace SnakeGame.Application.Manager
 
         private void Start()
         {
+            Screen.SetResolution (1080, 1920, true);
+            
             SnakeInput.OnDirectionChanged += OnInputDirectionChanged;
 
             SetUpGameBoardView?.Invoke (gameConfiguration, SnakeManager.GetSnake);
