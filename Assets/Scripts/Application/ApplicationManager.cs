@@ -3,10 +3,9 @@ using UnityEngine;
 using SnakeGame.GameInput;
 using Core.SnakeBoard;
 using System;
-using SnakeView;
 using SnakeGame.Config;
 using SnakeGame.Core;
-using SnakeGame.Core.Manager;
+using Core.Manager;
 
 namespace SnakeGame.Application.Manager
 {
